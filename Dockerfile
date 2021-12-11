@@ -4,7 +4,9 @@ ENV APP_HOME /app
 COPY requirements.txt ${APP_HOME}/
 
 RUN apt-get update \
-  && apt-get install -y g++ \
+  && apt-get install -y \
+  && g++ \
+  && wget \
   && pip install --no-cache-dir -r ${APP_HOME}/requirements.txt
 
 COPY . ${APP_HOME}
