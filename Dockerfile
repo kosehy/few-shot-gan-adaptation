@@ -4,8 +4,7 @@ ENV APP_HOME /app
 COPY requirements.txt ${APP_HOME}/
 
 RUN apt-get update \
-  && apt-get install -y \
-  && wget \
+  && apt-get install -y wget \
   && g++ \
   && conda install -c conda-forge cudatoolkit-dev \
   && pip install --no-cache-dir -r ${APP_HOME}/requirements.txt
