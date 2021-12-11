@@ -6,3 +6,4 @@ numpy==1.19.5
 lpips==0.1.3
 Pillow==8.0.1
 pytorch-fid==0.1.1
+packaging

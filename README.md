@@ -26,6 +26,19 @@ Our method helps adapt the source GAN where one-to-one correspondence is preserv
 - Python 3.6.9
 - Install all the libraries through `pip install -r requirements.txt` 
 
+
+## Docker env setting
+
+```
+docker build -t test .
+```
+
+## Run docker container
+
+```
+docker run -it test:latest
+```
+
 ## Testing
 
 We provide the pre-trained models for different source and adapted (target) GAN models. 
